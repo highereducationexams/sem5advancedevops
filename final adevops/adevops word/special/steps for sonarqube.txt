@@ -1,0 +1,97 @@
+ASSIGNMENT 8: 
+
+STEP 1:-
+Open Windows Explorer.
+SEARCH FOR  
+sonarqube.org
+
+STEP 2:-
+open home page 
+and download the community edition of Sonarqube 9.9 LTS
+
+Go to documentation and search for sonar scanner 5.01.
+Click on the first result.
+
+verify that appropriate Java version 17 is verified and configured if not download it then.
+(If you have any version apart from JDK 17 then delete those settings 
+because Sonarqube has an elastic search version that works only with JDK 17.)
+
+
+STEP 3:-
+Unzip the Sonarqube and Sonars-scanner files in a separate directory.
+Make one separate directory and move these two files to one place.
+
+STEP 4 (configuring server-side):-
+Go to the environment variable and add a new variable called sonarqube.
+and open the folder containing the path for the bin folder.
+
+STEP 5:_
+Go to cmd and go to the Sonarqube bin directory 
+
+Once you enter the bin folder,
+Select the appropriate operating system  bin folder and then write:  
+ 
+(StartSonar.bat)
+And once it starts successfully it will show the process is up and sonarqube is operational.
+
+STEP 6:-
+Open the web page localhost:9000 in the web browser.
+
+It will open the login page for sonarqube
+log in to the sonarqube using:
+
+username: admin
+password: admin
+
+STEP 7:-
+It will prompt you to update the password 
+and change the password and continue.
+
+The Sonarqube dashboard has been launched.
+click on manually option.
+
+STEP 8:-
+Provide a project display name ( say: python test project)  and click on the setup button.
+
+select the option locally.
+click on the generate button to generate a token
+click on the continue button.
+
+STEP 9:-
+Since we are working with the Python file click on others.
+select Windows as the operating system.
+
+Copy the sonar scanner execution command and paste it into the notepad and,
+Download the Python folder from the teams and place that in the same folder where sonarqube files are placed.
+
+STEP 10:-
+
+Open a new cmd and,
+Go to the sonar scanner bin folder.
+
+Open the sonar scanner execution command in the notepad and modify the Sonar.Sources parameters and add Python files directory path over there.
+
+STEP 11:-
+Add a new property by writing at the end: 
+ -D"sonar.projectBaseDir=(PATH OF PYTHO FILE)"
+
+RUN THE COMMAND IN THE NEW TERMINAL NOW.
+
+STEP 12:-
+Check the results of the execution in the sonarqube browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

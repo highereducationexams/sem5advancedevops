@@ -1,0 +1,41 @@
+-------------Browser thing-------------
+Go to IAM 
+Create user 
+Add policy ->  administrator access
+go to user/security credentials
+create new access key -> keep the page open
+copy the access key id and secret access key
+
+-------------Terminal Thing-------------
+Open Powershell as administrator
+check if choco is installed
+if not run Get-ExecutionPolicy
+then Set-ExecutionPolicy AllSigned (just in case Set-ExecutionPolicy Bypass -Scope Process)
+Get-ExecutionPolicy
+Run this after that
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install terrform
+
+copy code in .tf file
+provider "aws" {
+  region = "ap-southeast-2"
+}
+
+resource "aws_instance" "exam" {
+  ami           = "ami-0df4b2961410d4cff"
+  instance_type = "t2.micro"
+  tags = {
+    "Name" : "exam-aws"
+  }
+}
+go to that folder in Powershell
+aws configure 
+add details from Browser and code, last blank
+
+terraform init
+terraform plan
+terraform apply
+
+check for created instance on aws
+
+terraform destroy

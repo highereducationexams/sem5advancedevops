@@ -1,0 +1,32 @@
+create table -> ohayotable
+set partition id
+
+create role -> ohayodynamo
+lambda
+dynamofullaccess
+
+lambda function -> ohayodynamo
+runtime python
+existing role -> ohayodynamo
+
+copy this code
+import json
+import boto3
+
+def lambda_handler(event, context):
+    clientdynamo=boto3.resource('dynamodb')
+    table=clientdynamo.Table('ohayotable')
+    response=table.put_item(Item=event)
+    return response
+
+configure test event, add any 3 key:values in the json
+{
+  "name": "ajay",
+  "roll_no": "73",
+  "marks": "100"
+}
+
+deploy test
+
+check explore items in table for data
+

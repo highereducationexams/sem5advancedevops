@@ -1,0 +1,43 @@
+s3 bucket
+
+
+create s3 bucket - file uplaod (any file)
+
+iam - policies - create policy - select json instead of visual
+paste 
+
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "Allow",
+"Action": [ "logs:PutLogEvents",
+"logs:CreateLogGroup",
+"logs:CreateLogStream"
+],
+"Resource": "arn:aws:logs:*:*:*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"s3:GetObject"
+],
+"Resource": "arn:aws:s3:::*/*"
+}
+]
+}
+
+policy name,create policy
+
+roles - create role - aws service - service : lambda, 
+select newly made policy - next - rolename - create role
+
+lambda - create function - use blueprint - instead of hello world function choose s3 object python wala - give name -use an existing role - choose your newly made role -
+
+code ke neeche s3 trigger hoga -  bucket : choose banaya hua bucket - event type : all object ... - create func
+
+code - already there - congigure test event - template :s3 put - event json me bucket ka naam Replace with own (23,27) - then copy file name and replace in line no. 30 ie obj key -
+name event - save
+
+deploy
+test

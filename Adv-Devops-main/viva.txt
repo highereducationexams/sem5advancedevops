@@ -1,0 +1,20 @@
+
+VIVA
+-  based on practical = process of prac, instance, buckets(used to upload static files),
+-  use of aws,
+-  aws services,
+-  features of aws(5) and explain
+-  Benefits of aws
+-  Kubernetes, what it does on aws, why is it used, Minikube
+-  sonarqube related to aws
+-  database of aws
+-  Other platform like aws
+-  What is lang is used in terraform wrritten -> GO
+-  what is a container
+-  What's d basic difference between Devops n Advdevops. 
+-  What r d features of AWS..
+-  What's d use of kubernetes..
+-  What is kubernetes 
+-  Features of sonarqube
+-  Comparison of kubernetes with docker..
+-  What's d role of Lambda function in AWS..

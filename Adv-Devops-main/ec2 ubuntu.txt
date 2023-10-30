@@ -1,0 +1,14 @@
+create ec2
+select ubuntu with key pair 
+connect -> connect
+
+initially sudo apt update
+javac
+
+for cpp
+sudo apt install build-essential
+g++ -o filename filename.cpp
+./filename
+
+for python
+python3 filename.py

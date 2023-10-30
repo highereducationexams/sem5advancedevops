@@ -1,0 +1,16 @@
+create a s3 bucket
+upload codebase
+main file must be index.html
+
+properties -> Static website hosting -> enable save
+
+permissions -> Block public access (bucket settings) - > edit -> untick -> save
+
+permissions -> Object Ownership -> ACLs enabled
+
+select all uploaded items in codebase -> actions -> make public using ACLs
+
+Buckets -> s3webapp -> index.html -> Object URL
+
+open url 
+ez

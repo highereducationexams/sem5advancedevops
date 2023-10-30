@@ -1,0 +1,16 @@
+SonarQube
+
+1. Download SonarQube and Sonar Scanner Zip from official website
+2. Unzip both
+3. Make a folder having python program in it
+4. Check for java --version, should be jdk 17
+5. Open CMD and navigate to sonarqube->bin->windows
+6. Set Environment Variable for SonarQube in Control Panel
+7. run StartSonar.bat
+8. Once SonarQube is operational, open localhost:9000 and login
+9. Create Project-> manually and locally
+10. copy key for token
+11. Open a separate cmd tab and navigate to sonar scanner->bin
+12. run the below command:
+
+sonar-scanner.bat -D"sonar.projectKey=Practice1" -D"sonar.sources=C:\Users\HP\Desktop\SEM V\Adv Devops Lab\Sonarqube Lab\PythonPrograms\PythonPrograms" -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_5d52a94a370e10ccf0271cde23cbf1e70e9ba58f" -D"sonar.projectBaseDir=C:\Users\HP\Desktop\SEM V\Adv Devops Lab\Sonarqube Lab\PythonPrograms\PythonPrograms"

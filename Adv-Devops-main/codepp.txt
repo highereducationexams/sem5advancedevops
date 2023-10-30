@@ -1,0 +1,34 @@
+create bucket
+upload html files
+
+code commit
+create repo with name and email
+
+code pipeline 
+create pipeline
+aws code commit 
+amazon s3
+skip build 
+create a folder - index.html
+bucket create, public access block remove, create
+codecommit - repo - upload - name, email 
+codepipeline - name, next, repo name, branch nmae, recommended wala option, rest same, skip, 
+amazon s3 , bucket, extra file before display , next, create
+
+s3 bucket properties, static enable, edit bucket policy , paste 
+change name
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::s3repopp/*"
+        }]}
+
+save
+
+prop
+staic - website check now
+
