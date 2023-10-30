@@ -1,0 +1,53 @@
+provider "aws" {
+    region="us-east-2"
+    access_key="AKIAVLVYNDMZRFSW4G5U"
+    secret_key = "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"
+}
+
+resource "aws_instance" "myT21_88"{
+    ami="ami-0d3183af565a0a95d"
+    instance_type="t2.micro"
+}
+
+
+[30-10-2023 06:59 PM] : https://drive.google.com/drive/folders/1XnuXu2hqg823dEiHXQ0mxqcCikv_ZK1s
+[30-10-2023 06:59 PM] : https://drive.google.com/drive/folders/1Ma77ewTcCsL3Kzgr3dZh9dGuh1LAiJrN
+[30-10-2023 06:59 PM] : https://drive.google.com/drive/folders/1XnuXu2hqg823dEiHXQ0mxqcCikv_ZK1s
+[30-10-2023 07:00 PM] : https://drive.google.com/drive/folders/1KNzz2insrYhjL3P67V6nhFfgaiE6NAiZ
+[30-10-2023 07:00 PM] : https://drive.google.com/drive/folders/1XnuXu2hqg823dEiHXQ0mxqcCikv_ZK1s?usp=drive_link
+[30-10-2023 07:00 PM] : https://drive.google.com/drive/folders/1Ma77ewTcCsL3Kzgr3dZh9dGuh1LAiJrN
+[30-10-2023 07:00 PM] : https://drive.google.com/drive/folders/1DJPdxEvf-hu5-9e-Zv7bfvGywwQwuGQJ
+
+
+main account :- parabanimeshnarayan@gmail.com
+Animesh@212004
+
+second account: 192109animeshparab@gmail.com
+Animesh@192109
+
+
+
+# AdvanceDevOps
+https://drive.google.com/drive/folders/1Ma77ewTcCsL3Kzgr3dZh9dGuh1LAiJrN
+
+https://drive.google.com/drive/folders/1DJPdxEvf-hu5-9e-Zv7bfvGywwQwuGQJ
+
+
+
+
+github links
+
+
+https://github.com/Sahyadri-1674/AdvanceDevOps
+
+
+provider "aws" {
+    region="us-east-1"
+    access_key="AKIAVLVYNDMZVW4MBOTG"
+    secret_key = "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"
+}
+
+resource "aws_instance" "myT21_88"{
+    ami="ami-0fc5d935ebf8bc3bc"
+    instance_type="t2.micro"
+}
